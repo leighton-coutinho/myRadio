@@ -1,0 +1,76 @@
+
+body {
+  margin: 0;
+  background-color: #ffa500;
+  text-align: center;
+  background: url('/static/media/mybackground.jpg');
+  position: relative;
+}
+
+
+.maindiv {
+  margin: 0;
+  text-align: center;
+  position: absolute;
+
+}
+.music {
+  width:10%; /* you can use % */
+  height: 10%;
+  float: right;
+  margin-right: 30px;
+
+}
+
+.musicdiv {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.news {
+  width:10%; /* you can use % */
+  height: 10%;
+  float: right;
+  margin-right: 30px;
+
+}
+
+.newsdiv {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.entertainment {
+  width:10%; /* you can use % */
+  height: 10%;
+  float: right;
+  margin-right: 30px;
+}
+
+.entertainmentdiv {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+
+}
+
+.family {
+  width:10%; /* you can use % */
+  height: 10%;
+  float: right;
+  margin-right: 30px;
+}
+
+.voicediv {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+
+}
+
+
+.nonfloat {
+  float: none;
+}

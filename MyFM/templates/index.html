@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset="UTF-8">  
+        <title>login</title>
+        {% load static %}   
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">  
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>  
+        <link rel="stylesheet" href="{% static 'myfirst.css' %}">
+    </head>  
+    <body>
+        <h1>myRadio</h1>
+        <h2> Build your own personalised radio for long road trips</h2>
+        <div class="maindiv">
+
+            <form action="" method=POST>
+                {% csrf_token %}
+                <div class="musicdiv item">
+                    <p><b>If you would not like to add more genres, please leave the fields blank</b></p>
+                    <label for="first">First Genre:</label>
+                    <select id="first" name="first">
+                        <option value="" >Choose here</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Country">Country</option>
+                        <option value="News">News</option>
+                    </select>
+                    <label for="firsti">First Genre Duration (minutes):</label>
+                    <input type="number" id="firsti" name="firsti"> <br>
+
+                    <label for="second">Second Genre:</label>
+                    <select id="second" name="second">
+                        <option value="" >Choose here</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Country">Country</option>
+                        <option value="News">News</option>
+                    </select>
+                    <label  for="secondi">Second Genre Duration (minutes):</label>
+                    <input type="number" id="secondi" name="secondi"> <br>
+
+                    <label for="third">Third Genre:</label>
+                    <select id="third" name="third">
+                        <option value="" >Choose here</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Country">Country</option>
+                        <option value="News">News</option>
+                    </select>
+                    <label for="thirdi">Third Genre Duration (minutes):</label>
+                    <input type="number" id="thirdi" name="thirdi"> <br>
+
+                    <label for="fourth">Fourth Genre:</label>
+                    <select id="fourth" name="fourth">
+                        <option value="">Choose here</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Country">Country</option>
+                        <option value="News">News</option>
+                    </select>
+                    <label  for="fourthi">Fourth Genre Duration (minutes):</label>
+                    <input type="number" id="fourthi" name="fourthi"> <br>
+
+                    <label for="fifth">Fifth Genre:</label>
+                    <select id="fifth" name="fifth">
+                        <option value="" >Choose here</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Country">Country</option>
+                        <option value="News">News</option>
+                    </select>
+                    <label for="fifthi">Fifth Genre Duration (minutes):</label>
+                    <input type="number" id="fifthi" name="fifthi"> <br>
+
+                    <label for="sixth">Sixth Genre:</label>
+                    <select id="sixth" name="sixth">
+                        <option value="" >Choose here</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Country">Country</option>
+                        <option value="News">News</option>
+                    </select>
+                    <label  for="sixthi">Sixth Genre Duration (minutes):</label>
+                    <input type="number" id="sixthi" name="sixthi"> <br>
+
+                    <label for="seventh">Seventh Genre:</label>
+                    <select id="seventh" name="seventh">
+                        <option value="" >Choose here</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Country">Country</option>
+                        <option value="News">News</option>
+                    </select>
+                    <label for="seventhi">Seventh Genre Duration (minutes):</label>
+                    <input type="number" id="seventhi" name="seventhi"> <br>
+
+                    <label for="eigth">Eighth Genre:</label>
+                    <select id="eigth" name="eighth">
+                        <option value="" >Choose here</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Country">Country</option>
+                        <option value="News">News</option>
+                    </select>
+                    <label  for="eighti">Eighth Genre Duration (minutes):</label>
+                    <input type="number" id="eighthi" name="eighthi"> <br>
+
+                    <label for="ninth">Ninth Genre:</label>
+                    <select id="ninth" name="ninth">
+                        <option value="" >Choose here</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Country">Country</option>
+                        <option value="News">News</option>
+                    </select>
+                    <label for="ninthi">Ninth Genre Duration (minutes):</label>
+                    <input type="number" id="ninthi" name="ninthi"> <br>
+
+                    <label for="tenth">Tenth Genre:</label>
+                    <select id="tenth" name="tenth">
+                        <option value="" >Choose here</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Country">Country</option>
+                        <option value="News">News</option>
+                    </select>
+                    <label  for="tenthi">Tenth Genre Duration (minutes):</label>
+                    <input type="number" id="tenthi" name="tenthi">
+                    <img class="music" src="{% static "media/music.png" %}" alt="home" />
+                    <img class="news" src="{% static "media/news.png" %}" alt="home" />
+                </div>
+
+                <div class="voicediv">
+                    <label for="files"> <b>Upload memorable audio files you would like to hear throughout your radio: (Upto 4)</b></label> <br>
+                    <input type="file" id="file1" name="file1">
+                    <input type="file" id="file2" name="file2">
+                    <input type="file" id="file3" name="file3">
+                    <input type="file" id="file4" name="file4">
+                    <img class="family" src="{% static "media/family.png" %}" alt="home" /> 
+                </div>
+
+                <div class="entertainmentdiv">
+                    <label for="j"> <b>Would you like jokes within your radio?:</b></label>
+                    <input type="checkbox" id="jokes" name="jokes"> <br>
+                    <label for="riddles"><b>Would you like riddles within your radio? Enter the desired frequency: (e.g every 30 minutes, if not please enter 0):</b></label>
+                    <input type="number" id="riddles" name="riddles"> <br>
+                    <img class="entertainment" src="{% static "media/clown.png" %}" alt="home" />  
+                    <img class="entertainment" src="{% static "media/riddle.png" %}" alt="home" />  
+                </div>
+            
+            
+            
+                <input type="submit" value="Submit" class="btn btn-secondary">
+            </form>
+        </div>
+    </body>
+</html>
+
